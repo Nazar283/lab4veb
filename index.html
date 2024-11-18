@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/modalWindow.css">
+    <title>KhvoyaTrade</title>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+        <h2>KhvoyaTrade</h2>
+    </header>
+
+    <main>
+
+        <section class="options">
+
+            <h3>Enter the manufacturer of the Christmas tree</h3>
+            <input id="find_input" type="text">
+            <div class="select_buttons">
+                <button id="find_button" type="button">Find</button>
+                <button id="reset_button" type="button">Reset</button>
+            </div>
+            <h3>Sort by decrease of price</h3>
+            <button id="sort_by_decrease_of_price" type="button">Sort</button>
+            <h3>Sort by increase of price</h3>
+            <button id="sort_by_increase_of_price" type="button">Sort</button>
+
+            <p id="priceCount" class="priceCount">Total value of Christmas trees on page:</p>
+
+            <div class="create_form">
+                <form>
+                    <h3 class="main_title">Create a Christmas tree</h3>
+                    <div class="input_block">
+                        <label for="manufacturer_desc_input">Manufacturer</label>
+                        <input type="text" id="manufacturer_desc_input">
+                    </div>
+                    <div class="input_block">
+                        <label for="height_desc_input">Height</label>
+                        <input type="text" id="height_desc_input">
+                    </div>
+                    <div class="input_block">
+                        <label for="price_desc_input">Price</label>
+                        <input type="text" id="price_desc_input">
+                    </div>
+                    <div class="input_block">
+                        <label for="material_desc_input">Material</label>
+                        <input type="text" id="material_desc_input">
+                    </div>
+                    <button type="submit" id="submit_btn">Submit</button>
+                </form>
+            </div>
+
+        </section>
+
+        <div id="tree_container" class="wrapper"></div>
+
+        <div id="errorModal" class="modal">
+            <div class="modal-content">
+                <img src="img/404op.svg" class="error_img">
+                <div class="modal-message_and-close">
+                    <p id="modalMessage"></p>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <script type="module" src="js_modules/index.js"></script>
+    
+</body>
+</html>

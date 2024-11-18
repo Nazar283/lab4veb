@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input_block {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4a90e2;
+}
+
+button[type="submit"],
+button[type="button"] {
+    all: unset;
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+button[type="submit"] {
+    background-color: #4a90e2;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
+button[type="button"] {
+    background-color: #ff3b30;
+}
+
+button[type="button"]:hover {
+    background-color: #cc2a21;
+}
+
+button[type="button"],
+.cancel-button {
+    all: unset;
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.cancel-button {
+    background-color: #ff3b30;
+}
+
+.cancel-button:hover {
+    background-color: #cc2a21;
+}
